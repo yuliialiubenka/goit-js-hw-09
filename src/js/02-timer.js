@@ -21,7 +21,6 @@ const options = {
     time_24hr: true,
     defaultDate: new Date(),
     minuteIncrement: 1,
-    minDate: Date.now(),
     onClose(selectedDates) {
         if (selectedDates[0] < Date.now()) {
             Notify.failure("Please choose a date in the future")
